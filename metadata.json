@@ -1,0 +1,6 @@
+{
+  "name": "Projetos de Viveiros para Aves",
+  "description": "Página de vendas oficial de +100 Projetos Profissionais de Viveiros para Aves com plantas baixas, memória descritiva, lista de materiais e bônus exclusivos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
