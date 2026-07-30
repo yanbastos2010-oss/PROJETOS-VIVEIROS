@@ -10,29 +10,15 @@
     <link rel="preconnect" href="https://i.ibb.co" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Preload only the LCP Hero Banner -->
     <link rel="preload" as="image" href="https://i.ibb.co/KjC0z0pz/Design-sem-nome-4.png" fetchpriority="high">
-    <link rel="preload" as="image" href="https://i.ibb.co/5ghw1Fwz/100-Projetos-Profissionais-de-Viveiros-para-Aves-2.webp" fetchpriority="high">
-    <link rel="preload" as="image" href="https://i.ibb.co/sdkBrxhG/100-Projetos-Profissionais-de-Viveiros-para-Aves-4.webp" fetchpriority="high">
-    <link rel="preload" as="image" href="https://i.ibb.co/tPhs2BSY/100-Projetos-Profissionais-de-Viveiros-para-Aves.webp" fetchpriority="high">
-    <link rel="preload" as="image" href="https://i.ibb.co/5h3XmWCT/100-Projetos-Profissionais-de-Viveiros-para-Aves-1.webp" fetchpriority="high">
-    <link rel="preload" as="image" href="https://i.ibb.co/xrk0J2W/100-Projetos-Profissionais-de-Viveiros-para-Aves-3.webp" fetchpriority="high">
-    <script>
-      (function(){
-        var imgs = [
-          "https://i.ibb.co/KjC0z0pz/Design-sem-nome-4.png",
-          "https://i.ibb.co/5ghw1Fwz/100-Projetos-Profissionais-de-Viveiros-para-Aves-2.webp",
-          "https://i.ibb.co/sdkBrxhG/100-Projetos-Profissionais-de-Viveiros-para-Aves-4.webp",
-          "https://i.ibb.co/tPhs2BSY/100-Projetos-Profissionais-de-Viveiros-para-Aves.webp",
-          "https://i.ibb.co/5h3XmWCT/100-Projetos-Profissionais-de-Viveiros-para-Aves-1.webp",
-          "https://i.ibb.co/xrk0J2W/100-Projetos-Profissionais-de-Viveiros-para-Aves-3.webp"
-        ];
-        for (var i = 0; i < imgs.length; i++) {
-          var img = new Image();
-          img.src = imgs[i];
-        }
-      })();
-    </script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Non-render-blocking font loading -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap">
+    </noscript>
   </head>
   <body>
     <div id="root"></div>

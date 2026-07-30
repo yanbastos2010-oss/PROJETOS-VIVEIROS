@@ -24,6 +24,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onCtaClick }) => {
           <img
             src="https://i.ibb.co/KjC0z0pz/Design-sem-nome-4.png"
             alt="Design sem nome (4)"
+            width="800"
+            height="500"
             className="max-w-full h-auto mx-auto border-none shadow-none rounded-none"
             loading="eager"
             fetchPriority="high"
