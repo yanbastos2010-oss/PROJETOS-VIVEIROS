@@ -14,12 +14,30 @@ import { DiscountModal } from './components/DiscountModal';
 export default function App() {
   const [isDiscountOpen, setIsDiscountOpen] = useState(false);
 
+  const redirectToCheckout = (baseUrl: string) => {
+    try {
+      const url = new URL(baseUrl);
+      
+      // Copy current window.location.search params to checkout URL
+      if (window.location.search) {
+        const currentParams = new URLSearchParams(window.location.search);
+        currentParams.forEach((value, key) => {
+          url.searchParams.set(key, value);
+        });
+      }
+
+      window.location.href = url.toString();
+    } catch {
+      window.location.href = baseUrl;
+    }
+  };
+
   const handleHeroCtaClick = () => {
     const pricingElement = document.getElementById('planos');
     if (pricingElement) {
       pricingElement.scrollIntoView({ behavior: 'smooth' });
     } else {
-      window.location.href = 'https://ggcheckout.app/checkout/v5/dcDMJA3OwGVMck67AyYX';
+      redirectToCheckout('https://ggcheckout.app/checkout/v5/dcDMJA3OwGVMck67AyYX');
     }
   };
 
@@ -27,18 +45,18 @@ export default function App() {
     if (planName === 'Plano Básico') {
       setIsDiscountOpen(true);
     } else {
-      window.location.href = 'https://ggcheckout.app/checkout/v5/dcDMJA3OwGVMck67AyYX';
+      redirectToCheckout('https://ggcheckout.app/checkout/v5/dcDMJA3OwGVMck67AyYX');
     }
   };
 
   const handleAcceptDiscount = () => {
     setIsDiscountOpen(false);
-    window.location.href = 'https://ggcheckout.app/checkout/v5/Zg8BM0rsTsRpP4fJIj4E';
+    redirectToCheckout('https://ggcheckout.app/checkout/v5/Zg8BM0rsTsRpP4fJIj4E');
   };
 
   const handleDeclineDiscount = () => {
     setIsDiscountOpen(false);
-    window.location.href = 'https://ggcheckout.app/checkout/v5/ApQDAmNvfP5rZA3Lsq2A';
+    redirectToCheckout('https://ggcheckout.app/checkout/v5/ApQDAmNvfP5rZA3Lsq2A');
   };
 
   return (
