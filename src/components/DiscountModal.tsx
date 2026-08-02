@@ -1,5 +1,6 @@
 import React from 'react';
 import { X } from 'lucide-react';
+import { getCheckoutUrl } from '../lib/utils';
 
 interface DiscountModalProps {
   isOpen: boolean;
@@ -114,22 +115,22 @@ export const DiscountModal: React.FC<DiscountModalProps> = ({
 
         {/* Actions */}
         <div className="discount-actions space-y-2 pt-1 shrink-0">
-          <button
-            className="cta-primary w-full py-3.5 px-3 bg-[#ea880f] hover:bg-[#d87c0a] text-white font-poppins font-black text-base sm:text-lg tracking-tight uppercase rounded-xl shadow-lg shadow-amber-600/30 transition transform hover:-translate-y-0.5 cursor-pointer leading-tight"
+          <a
+            className="cta-primary w-full py-3.5 px-3 bg-[#ea880f] hover:bg-[#d87c0a] text-white font-poppins font-black text-base sm:text-lg tracking-tight uppercase rounded-xl shadow-lg shadow-amber-600/30 transition transform hover:-translate-y-0.5 cursor-pointer leading-tight inline-block text-center no-underline"
             data-popup-accept=""
             id="a8b8ba04-bc1b-b8d0-f89d-c0dbbffed49c"
-            onClick={onAcceptDiscount}
+            href={getCheckoutUrl('https://ggcheckout.app/checkout/v5/Zg8BM0rsTsRpP4fJIj4E')}
           >
             QUERO O COMPLETO COM DESCONTO
-          </button>
-          <button
-            className="discount-decline w-full py-2.5 px-4 bg-white hover:bg-slate-50 text-black font-poppins font-extrabold text-xs sm:text-sm uppercase border border-slate-300 rounded-xl transition cursor-pointer"
+          </a>
+          <a
+            className="discount-decline w-full py-2.5 px-4 bg-white hover:bg-slate-50 text-black font-poppins font-extrabold text-xs sm:text-sm uppercase border border-slate-300 rounded-xl transition cursor-pointer inline-block text-center no-underline"
             data-popup-decline=""
             id="b3d34a9d-09a9-055a-0033-8fa441c807d8"
-            onClick={onDeclineDiscount}
+            href={getCheckoutUrl('https://ggcheckout.app/checkout/v5/ApQDAmNvfP5rZA3Lsq2A')}
           >
             QUERO FICAR COM O BÁSICO
-          </button>
+          </a>
         </div>
       </div>
     </div>

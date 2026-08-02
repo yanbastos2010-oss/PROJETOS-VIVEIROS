@@ -1,4 +1,5 @@
 import React from 'react';
+import { getCheckoutUrl } from '../lib/utils';
 
 interface PricingSectionProps {
   onSelectPlan: (planName: string, price: string) => void;
@@ -82,13 +83,17 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPlan }) 
                   <strong className="text-[38px] leading-tight font-black text-[#15803d] font-price block">R$10,00</strong>
                 </div>
 
-                <button
+                <a
                   id="0a24041a-2247-8c4b-67e5-54f3efcec564"
-                  onClick={() => onSelectPlan('Plano Básico', '10,00')}
-                  className="w-full py-3.5 px-6 rounded-lg bg-white hover:bg-slate-50 border border-slate-300 text-black font-cta text-base sm:text-lg font-bold uppercase transition-all duration-200 cursor-pointer"
+                  href={getCheckoutUrl('https://ggcheckout.app/checkout/v5/ApQDAmNvfP5rZA3Lsq2A')}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onSelectPlan('Plano Básico', '10,00');
+                  }}
+                  className="w-full py-3.5 px-6 rounded-lg bg-white hover:bg-slate-50 border border-slate-300 text-black font-cta text-base sm:text-lg font-bold uppercase transition-all duration-200 cursor-pointer inline-block text-center no-underline"
                 >
                   QUERO O BÁSICO
-                </button>
+                </a>
               </div>
 
             </article>
@@ -173,13 +178,13 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPlan }) 
                   <strong className="text-[52px] leading-tight font-black text-[#15803d] font-price block">R$27,90</strong>
                 </div>
 
-                <button
+                <a
                   id="bd5b0723-f63e-edea-d1d4-48bf9025f6ec"
-                  onClick={() => onSelectPlan('Plano Completo', '27,90')}
-                  className="w-full py-4 px-6 rounded-lg bg-[#ea880f] hover:bg-[#d87c0a] text-white font-cta text-base uppercase shadow-md shadow-amber-600/30 transform hover:-translate-y-0.5 transition-all duration-200 cursor-pointer mt-7"
+                  href={getCheckoutUrl('https://ggcheckout.app/checkout/v5/dcDMJA3OwGVMck67AyYX')}
+                  className="w-full py-4 px-6 rounded-lg bg-[#ea880f] hover:bg-[#d87c0a] text-white font-cta text-base uppercase shadow-md shadow-amber-600/30 transform hover:-translate-y-0.5 transition-all duration-200 cursor-pointer mt-7 inline-block text-center no-underline"
                 >
                   QUERO O COMPLETO
-                </button>
+                </a>
               </div>
 
             </article>

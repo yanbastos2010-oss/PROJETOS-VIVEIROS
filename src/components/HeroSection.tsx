@@ -35,12 +35,16 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onCtaClick }) => {
 
         {/* Big Main Orange CTA Button */}
         <div className="pt-2 pb-4">
-          <button
-            onClick={onCtaClick}
-            className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 sm:px-12 sm:py-5 bg-[#ea880f] hover:bg-[#d87c0a] text-white font-cta text-lg sm:text-xl rounded-md shadow-lg shadow-amber-600/30 transform hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 uppercase tracking-wide cursor-pointer"
+          <a
+            href="#planos"
+            onClick={(e) => {
+              e.preventDefault();
+              onCtaClick();
+            }}
+            className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 sm:px-12 sm:py-5 bg-[#ea880f] hover:bg-[#d87c0a] text-white font-cta text-lg sm:text-xl rounded-md shadow-lg shadow-amber-600/30 transform hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 uppercase tracking-wide cursor-pointer no-underline"
           >
             QUERO MEU ACESSO
-          </button>
+          </a>
         </div>
 
       </div>
