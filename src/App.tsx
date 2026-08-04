@@ -76,14 +76,14 @@ export default function App() {
       {/* 5. BÔNUS EXCLUSIVOS */}
       <ExclusiveBonuses />
 
-      {/* 6. O QUE DIZEM DO MATERIAL */}
-      <Testimonials />
-
-      {/* 7. ESCOLHA O PLANO IDEAL */}
+      {/* 6. ESCOLHA O PLANO IDEAL */}
       <PricingSection onSelectPlan={handleSelectPlan} />
 
-      {/* 8. Garantia Incondicional de 14 Dias */}
+      {/* 7. Garantia Incondicional de 14 Dias */}
       <GuaranteeSection />
+
+      {/* 8. O QUE DIZEM DO MATERIAL */}
+      <Testimonials />
 
       {/* 9. PERGUNTAS FREQUENTES */}
       <FaqSection />

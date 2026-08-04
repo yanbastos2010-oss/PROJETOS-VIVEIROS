@@ -37,21 +37,6 @@ const faqItems: FaqItem[] = [
     id: 'f7',
     question: 'Posso acessar pelo celular?',
     answer: 'Sim, os arquivos podem ser visualizados em qualquer dispositivo (celular, tablet, computador) ou impressos.'
-  },
-  {
-    id: 'f8',
-    question: 'Preciso pagar mensalidade?',
-    answer: 'Não. O pagamento é único e dá direito a todo o material e atualizações sem nenhuma cobrança posterior.'
-  },
-  {
-    id: 'f9',
-    question: 'Como funciona a garantia?',
-    answer: 'Você tem 14 dias de garantia incondicional. Se não gostar por qualquer motivo, basta solicitar o reembolso para receber 100% do seu dinheiro de volta.'
-  },
-  {
-    id: 'f10',
-    question: 'Recebo imediatamente?',
-    answer: 'Sim! Para pagamentos no PIX ou Cartão de Crédito, o envio é imediato por e-mail e WhatsApp.'
   }
 ];
 

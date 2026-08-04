@@ -6,6 +6,7 @@ const bonusList: BonusItem[] = [
     id: 'bon1',
     number: 1,
     title: 'Planilha de Custos da Construção',
+    imageUrl: 'https://i.ibb.co/LzzFwTdR/499ee140-db3f-4ad0-9d87-0f3d9d9d99e4.png',
     description: 'Controle todos os gastos antes de iniciar a construção do viveiro e organize melhor o seu investimento.',
     originalPrice: 'De R$37',
     discountedPrice: 'HOJE: GRÁTIS'
@@ -14,6 +15,7 @@ const bonusList: BonusItem[] = [
     id: 'bon2',
     number: 2,
     title: 'Guia Completo de Materiais para Viveiros',
+    imageUrl: 'https://i.ibb.co/whyCj3NC/bd7dc0d2-5451-4f83-ab89-a7c87f9fb3f5.png',
     description: 'Aprenda como escolher telas, madeira, estruturas metálicas, telhados e demais materiais para construir um viveiro resistente e durável.',
     originalPrice: 'De R$47',
     discountedPrice: 'HOJE: GRÁTIS'
@@ -22,6 +24,7 @@ const bonusList: BonusItem[] = [
     id: 'bon3',
     number: 3,
     title: 'Checklist Completo da Construção',
+    imageUrl: 'https://i.ibb.co/BVRbmMzw/da04cc78-3b03-4b4d-880c-06ad4a9342fe.png',
     description: 'Acompanhe cada etapa da obra e evite esquecer materiais ou processos importantes durante a construção do viveiro.',
     originalPrice: 'De R$27',
     discountedPrice: 'HOJE: GRÁTIS'
@@ -47,11 +50,28 @@ export const ExclusiveBonuses: React.FC = () => {
               key={bonus.id}
               className="bg-white rounded-2xl p-6 sm:p-7 shadow-sm border border-amber-900/5 flex flex-col justify-between hover:shadow-md transition-shadow"
             >
-              <div className="space-y-2">
+              <div className="space-y-3">
                 {/* Bonus Badge Header */}
                 <span className="inline-block text-xs font-extrabold text-[#166534] uppercase tracking-wider bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200/60">
                   BÔNUS {bonus.number}
                 </span>
+
+                {/* Bonus Image */}
+                {bonus.imageUrl && (
+                  <div className="w-full aspect-square overflow-hidden flex items-center justify-center py-1">
+                    <img
+                      src={bonus.imageUrl}
+                      alt={bonus.title}
+                      width="400"
+                      height="400"
+                      loading="lazy"
+                      decoding="async"
+                      fetchPriority="low"
+                      referrerPolicy="no-referrer"
+                      className="max-w-[85%] max-h-[85%] object-contain"
+                    />
+                  </div>
+                )}
 
                 {/* Bonus Title */}
                 <h3 className="text-base sm:text-lg font-heading text-black leading-snug pt-1">

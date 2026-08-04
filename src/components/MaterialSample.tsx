@@ -69,8 +69,8 @@ export const MaterialSample: React.FC = () => {
                   alt={img.alt}
                   width="1414"
                   height="2000"
-                  loading="lazy"
-                  fetchPriority="low"
+                  loading={idx === 0 ? "eager" : "lazy"}
+                  fetchPriority={idx === 0 ? "auto" : "low"}
                   decoding="async"
                   referrerPolicy="no-referrer"
                 />

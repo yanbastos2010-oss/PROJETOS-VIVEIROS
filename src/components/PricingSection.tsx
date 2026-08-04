@@ -29,6 +29,10 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPlan }) 
                   <h3 className="text-xl sm:text-2xl font-heading text-black uppercase tracking-wide">
                     PLANO BÁSICO
                   </h3>
+                  <div className="mt-3">
+                    <span className="text-[16px] line-through text-rose-600 font-extrabold font-price block">De R$47</span>
+                    <strong className="text-[38px] leading-tight font-black text-[#15803d] font-price block">R$10,00</strong>
+                  </div>
                 </div>
 
                 <ul className="space-y-3 text-[15px] font-poppins font-normal text-black">
@@ -42,47 +46,24 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPlan }) 
                     <svg className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="m5 12 4 4L19 6"></path>
                     </svg>
-                    <span>Plantas Baixas</span>
+                    <span>Acesso Digital e Vitalício</span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <svg className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="m5 12 4 4L19 6"></path>
                     </svg>
-                    <span>Projetos Estruturais</span>
+                    <span>Garantia de 14 dias</span>
                   </li>
                   <li className="flex items-start gap-2.5">
-                    <svg className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="m5 12 4 4L19 6"></path>
-                    </svg>
-                    <span>Memorial Descritivo</span>
-                  </li>
-                  <li className="flex items-start gap-2.5">
-                    <svg className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="m5 12 4 4L19 6"></path>
-                    </svg>
-                    <span>Lista Completa de Materiais</span>
-                  </li>
-                  <li className="flex items-start gap-2.5">
-                    <svg className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="m5 12 4 4L19 6"></path>
-                    </svg>
-                    <span>Projetos para Diferentes Espécies e Tamanhos</span>
-                  </li>
-                  <li className="flex items-start gap-2.5">
-                    <svg className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="m5 12 4 4L19 6"></path>
+                    <svg className="w-4 h-4 text-red-600 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M18 6 6 18M6 6l12 12"></path>
                     </svg>
                     <span>Bônus Exclusivos</span>
                   </li>
                 </ul>
               </div>
 
-              <div className="space-y-4 pt-4 text-center border-t border-slate-100">
-                <div>
-                  <span className="text-[16px] line-through text-rose-600 font-extrabold font-price block">De R$97</span>
-                  <strong className="text-[38px] leading-tight font-black text-[#15803d] font-price block">R$10,00</strong>
-                </div>
-
+              <div className="pt-2 text-center border-t border-slate-100">
                 <a
                   id="0a24041a-2247-8c4b-67e5-54f3efcec564"
                   href={getCheckoutUrl('https://ggcheckout.app/checkout/v5/ApQDAmNvfP5rZA3Lsq2A')}
@@ -112,6 +93,10 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPlan }) 
                   <h3 className="text-xl sm:text-2xl font-heading text-black uppercase tracking-wide">
                     PLANO COMPLETO
                   </h3>
+                  <div className="mt-3">
+                    <span className="text-[16px] line-through text-rose-600 font-extrabold font-price block">De R$97</span>
+                    <strong className="text-[52px] leading-tight font-black text-[#15803d] font-price block">R$27,00</strong>
+                  </div>
                 </div>
 
                 <ul className="space-y-2.5 text-[15px] font-poppins font-normal text-black">
@@ -125,31 +110,25 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPlan }) 
                     <svg className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="m5 12 4 4L19 6"></path>
                     </svg>
-                    <span>Plantas Baixas</span>
+                    <span>Acesso Digital e Vitalício</span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <svg className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="m5 12 4 4L19 6"></path>
                     </svg>
-                    <span>Projetos Estruturais</span>
+                    <span>Garantia de 14 dias</span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <svg className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="m5 12 4 4L19 6"></path>
                     </svg>
-                    <span>Memorial Descritivo</span>
+                    <span>Atualizações Mensais</span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <svg className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="m5 12 4 4L19 6"></path>
                     </svg>
-                    <span>Lista Completa de Materiais</span>
-                  </li>
-                  <li className="flex items-start gap-2.5">
-                    <svg className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="m5 12 4 4L19 6"></path>
-                    </svg>
-                    <span>Projetos para Diferentes Espécies e Tamanhos</span>
+                    <span>Suporte Prioritário</span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <svg className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -172,16 +151,11 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPlan }) 
                 </ul>
               </div>
 
-              <div className="space-y-4 pt-4 text-center border-t border-amber-100">
-                <div>
-                  <span className="text-[16px] line-through text-rose-600 font-extrabold font-price block">De R$197</span>
-                  <strong className="text-[52px] leading-tight font-black text-[#15803d] font-price block">R$27,90</strong>
-                </div>
-
+              <div className="pt-2 text-center border-t border-amber-100">
                 <a
                   id="bd5b0723-f63e-edea-d1d4-48bf9025f6ec"
                   href={getCheckoutUrl('https://ggcheckout.app/checkout/v5/dcDMJA3OwGVMck67AyYX')}
-                  className="w-full py-4 px-6 rounded-lg bg-[#ea880f] hover:bg-[#d87c0a] text-white font-cta text-base uppercase shadow-md shadow-amber-600/30 transform hover:-translate-y-0.5 transition-all duration-200 cursor-pointer mt-7 inline-block text-center no-underline"
+                  className="w-full py-4 px-6 rounded-lg bg-[#ea880f] hover:bg-[#d87c0a] text-white font-cta text-base uppercase shadow-md shadow-amber-600/30 transform hover:-translate-y-0.5 transition-all duration-200 cursor-pointer inline-block text-center no-underline"
                 >
                   QUERO O COMPLETO
                 </a>

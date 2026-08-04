@@ -24,6 +24,7 @@ export interface BonusItem {
   id: string;
   number: number;
   title: string;
+  imageUrl?: string;
   description: string;
   originalPrice: string;
   discountedPrice: string;
